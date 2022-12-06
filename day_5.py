@@ -28,10 +28,10 @@ def finding_top_crates(piles_of_crates):
     for pile in piles_of_crates:
         top_crate = pile[-1]
         top_crates = top_crates + top_crate
-    print(top_crates)
+    return top_crates
 
 piles_after_rearrangement = using_crate_mover_9000(piles_of_crates, rearranging_procedure)
-finding_top_crates(piles_after_rearrangement)
+print(finding_top_crates(piles_after_rearrangement))
 
 #Part 2
 
@@ -54,4 +54,4 @@ def using_crate_mover_9001(piles_of_crates, rearranging_procedure):
     return piles_of_crates
 
 piles_after_rearrangement = using_crate_mover_9001(piles_of_crates, rearranging_procedure)
-finding_top_crates(piles_after_rearrangement)
+print(finding_top_crates(piles_after_rearrangement))
